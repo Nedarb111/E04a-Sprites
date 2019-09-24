@@ -17,7 +17,7 @@ class MyGame(arcade.Window):
         os.chdir(file_path)
         arcade.set_background_color(open_color.blue_4)
 
-        self.animal_list = arcade.SpriteList()
+        self.animal_list = arcade.SpriteList() 
 
 
     def setup(self):
@@ -38,6 +38,8 @@ class MyGame(arcade.Window):
 
     def on_mouse_motion(self, x, y, dx, dy):
         pass
+        self.animal_sprite.center_x = x
+        self.animal_sprite.center_y = y
 
 def main():
     """ Main method """
